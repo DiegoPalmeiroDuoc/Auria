@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="inicio">Bienvenido a Sylamouth</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding contenido-con-fondo" (ionViewDidEnter)="mostrarMensajeBienvenida()">
+  <img src="assets\35589.png" class="img-fluid fondo-imagen">
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input [(ngModel)]="email" type="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input [(ngModel)]="contrasena" type="password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-button class="botonInicio" expand="full" (click)="iniciarSesion()">Iniciar Sesión</ion-button>
+  <ion-button class="botonRegistro" expand="full" color="secondary" (click)="registrarse()">Registrarse</ion-button>
+  <ion-button class="botonOlvidar" expand="full" fill="clear" (click)="olvidarContrasena()">¿Olvidaste tu contraseña?</ion-button>
+
+  <!-- Espacio para la imagen de "Julia" -->
+  <div class="espacio-imagen-julia">
+    <img src="assets\julia-removebg-preview.png" class="fondo-imagen-julia">
+  </div>
+</ion-content>

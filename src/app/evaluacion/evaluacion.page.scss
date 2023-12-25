@@ -1,0 +1,25 @@
+.fondo-imagen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+
+.transparent-background {
+  background-color: rgba(0, 0, 0, 0) !important; /* Establece el último valor (0 en este caso) para ajustar la opacidad */
+}
+/* Establece un fondo verde lima en toda la pantalla */
+ion-content.transparent-background {
+  --background: rgb(107, 205, 50);
+}
+
+/* Ajustes adicionales para asegurar que el contenido sea visible en el fondo */
+ion-content.transparent-background ion-card {
+  background-color: rgba(0, 0, 0, 0.8); /* Color de fondo blanco translúcido */
+  padding: 10px; /* Añadir espacio alrededor del contenido de la tarjeta */
+}
+

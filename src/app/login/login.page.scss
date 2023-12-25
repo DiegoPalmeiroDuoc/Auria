@@ -1,0 +1,69 @@
+/* Estilos del fondo principal */
+.fondo-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  
+  /* Estilos de la imagen de "julia" */
+  .fondo-imagen-julia {
+    margin-left: -135px;
+    position: relative;
+    bottom: 20px; /* Alinea la imagen justo después de los botones */
+    left: 0;
+    width: 200%;
+    max-width: 300px; /* Establece un ancho máximo para que sea responsivo */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+    z-index: 1; /* Asegura que la imagen de "julia" esté detrás de los botones */
+  }
+  
+  /* Espacio para la imagen de "julia" */
+  .espacio-imagen-julia {
+    height: 20px; /* Agrega un espacio para la imagen de "julia" */
+  }
+  
+  /* Estilos del formulario y botones */
+  ion-list {
+    background-color: #dd691baf;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(224, 24, 24);
+  }
+  
+  ion-item {
+    --background: transparent;
+  }
+  
+  ion-button {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+    font-size: 16px; /* Reducción del tamaño de fuente de los botones */
+  }
+  
+  ion-button.secondary {
+    background-color: #74c6e1;
+    color: #ffffff;
+    font-size: 16px; /* Reducción del tamaño de fuente de los botones */
+  }
+  
+  ion-button.clear {
+    --color: #6bff86;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px; /* Reducción del tamaño de fuente de los botones */
+  }
+  
+  /* Asegura que el contenido con fondo tenga una posición relativa para posicionar elementos internos */
+  .contenido-con-fondo {
+    position: relative;
+  }
+  

@@ -1,0 +1,46 @@
+ion-list {
+    background-color: #dd691baf;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgb(224, 24, 24);
+  }
+  
+  ion-item {
+    --background: transparent;
+  }
+  
+  ion-button.botonRegistro {
+    background-color: #74c6e1;
+    color: #ffffff;
+    border-radius: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  /* Asegura que el contenido con fondo tenga una posición relativa para posicionar elementos internos */
+
+  .boton-volver {
+    position: absolute;
+    bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus preferencias */
+    left: 0;
+    width: 100%;
+  }
+  .fondo-imagen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+  }
+  .boton-volver {
+    background-color: #a51ed6; /* Color de fondo verde */
+    color: #fff; /* Color del texto blanco */
+    border-radius: 20px; /* Esquinas redondeadas */
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+  }
